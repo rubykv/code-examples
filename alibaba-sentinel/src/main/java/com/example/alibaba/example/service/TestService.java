@@ -1,4 +1,4 @@
-package com.example.alibaba.example.service.remote;
+package com.example.alibaba.example.service;
 
 import org.springframework.stereotype.Service;
 

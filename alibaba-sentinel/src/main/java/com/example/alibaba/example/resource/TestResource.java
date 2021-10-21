@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.alibaba.example.service.remote.TestService;
+import com.example.alibaba.example.service.TestService;
 
 @RestController
 @RequestMapping("/api")

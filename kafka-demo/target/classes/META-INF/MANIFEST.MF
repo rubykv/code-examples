@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: Ruby
+Build-Jdk: 16.0.1
+Implementation-Title: Spring Boot Blank Project (from https://github.com
+ /making/spring-boot-blank)
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.codesample.kafka
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: com.codesample.kafka.kafka_demo.App
+Created-By: Maven Integration for Eclipse
+
