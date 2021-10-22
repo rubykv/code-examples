@@ -1,0 +1,9 @@
+server:
+  port: 8761 #default port where discovery client is registered
+ 
+eureka:
+  client:
+    registerWithEureka: false   
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0    

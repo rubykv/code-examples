@@ -1,0 +1,23 @@
+server:
+  port: 8098    #port where this microservice will run
+ 
+eureka:         
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/ #eureka endpoint
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+ 
+spring:     
+  application:
+    name: eureka-demo   #service name, this will appear in eureka server homepage
+     
+management:
+  security:
+    enabled: false  
+ 
