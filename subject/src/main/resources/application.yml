@@ -16,8 +16,8 @@ eureka:
 spring:     
   application:
     name: subject   #service name, this will appear in eureka server homepage
+  config:
+    import: optional:configserver:http://localhost:8888/
      
-management:
-  security:
-    enabled: false  
- 
+management.endpoints.web.exposure.include: health,info,refresh
+
