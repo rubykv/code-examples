@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: registry
+
 server:
   port: 8761 #default port where discovery client is registered
  
