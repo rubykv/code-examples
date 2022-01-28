@@ -19,5 +19,4 @@ public class Sample {
 	public String toString() {
 		return "sample " + this.oneString + " ";
 	}
-
 }
