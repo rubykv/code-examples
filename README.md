@@ -49,6 +49,6 @@ Few of the projects implement multiple concepts so they would be listed under mu
 
 * With Spring Kafka
   * Project :: spring-kafka-demo
-  * Guide :: To be published
+  * Guide :: https://medium.com/javarevisited/implementing-another-in-demand-spring-project-spring-kafka-85ee25ec14f8
 
 	
