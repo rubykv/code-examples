@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.instrumentation.java</groupId>
+	<artifactId>agent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+		<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.27.0-GA</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+				<descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>
+								true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>
+								true</addDefaultSpecificationEntries>
+						</manifest>
+						<manifestEntries>
+							<Premain-Class>agent.MyAgent</Premain-Class>
+							<Can-Redefine-Classes>false</Can-Redefine-Classes>
+							<Can-Retransform-Classes>true</Can-Retransform-Classes>
+						</manifestEntries>
+					</archive>
+				</configuration>
+				<executions>
+            <execution>
+                <id>make-assembly</id>
+                <!-- this is used for inheritance merges -->
+                <phase>package</phase>
+                <!-- append to the packaging phase. -->
+                <goals>
+                    <goal>single</goal>
+                    <!-- goals == mojos -->
+                </goals>
+            </execution>
+        </executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
