@@ -51,4 +51,6 @@ Few of the projects implement multiple concepts so they would be listed under mu
   * Project :: spring-kafka-demo
   * Guide :: https://medium.com/javarevisited/implementing-another-in-demand-spring-project-spring-kafka-85ee25ec14f8
 
-	
+### Java Instrumentation
+* Project :: java-instrumentation
+* Guide :: https://medium.com/javarevisited/java-instrumentation-a-simple-working-example-in-java-a2c549024d9c
