@@ -1,0 +1,32 @@
+<!DOCTYPE configuration>
+<configuration>
+	<appender name="appender-console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<charset>UTF-8</charset>
+			<pattern>%d|%p|%t|%c{36}|%r|%n\t%replace(%caller{1}){'Caller\+\d+\s+at\s+', ''}\t%m%n%xEx</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>debug</level>
+		</filter>
+	</appender>
+
+	<logger name="ch" level="warn" />
+
+	<logger name="com" level="warn" />
+
+	<logger name="eu" level="warn" />
+
+	<logger name="java" level="warn" />
+
+	<logger name="javax" level="warn" />
+
+	<logger name="net" level="warn" />
+
+	<logger name="org" level="warn" />
+
+	<logger name="com.code_examples.grpc" level="debug" />
+
+	<root level="debug">
+		<appender-ref ref="appender-console" />
+	</root>
+</configuration>
