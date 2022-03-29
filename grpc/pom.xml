@@ -2,11 +2,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.github.akiraly.reusable-poms</groupId>
-		<artifactId>pom-parent-with-java-util-libs</artifactId>
-		<version>4</version>
-	</parent>
 	<groupId>com.code-examples</groupId>
 	<artifactId>grpc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -46,11 +41,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>21.0</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -78,6 +69,17 @@
 					<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.39.0:exe:${os.detected.classifier}</pluginArtifact>
 				</configuration>
 				<executions>
+					<execution>
+						<id>enforceid</id>
+						<configuration>
+							<rules></rules>
+							<requireUpperBoundDeps>
+								<includes>
+									<include>com.google.guava:guava</include>
+								</includes>
+							</requireUpperBoundDeps>
+						</configuration>
+					</execution>
 					<execution>
 						<goals>
 							<goal>compile</goal>
