@@ -54,3 +54,11 @@ Few of the projects implement multiple concepts so they would be listed under mu
 ### Java Instrumentation
 * Project :: java-instrumentation
 * Guide :: https://medium.com/javarevisited/java-instrumentation-a-simple-working-example-in-java-a2c549024d9c
+
+### gRPC
+* Project :: grpc
+* Guide :: https://medium.com/javarevisited/what-is-grpc-is-it-better-than-rest-api-58a3b7aff13a 
+
+### Reactive Programming RxJava
+* Project :: reactive
+* Guide :: <In-Progress>
