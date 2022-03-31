@@ -1,0 +1,9 @@
+# Eclipse specific files/directories
+.classpath
+.project
+.settings
+.metadata
+bin/
+# Build output directies
+target/
+build/
