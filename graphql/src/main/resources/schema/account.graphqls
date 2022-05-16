@@ -1,0 +1,20 @@
+type Query{
+	accountById(id : String): Account
+}
+
+type Account{
+	id: String
+	name: String
+	type: String
+	location: Location
+}
+
+type Location{
+	id: String
+	state: String
+	zip: String
+}
+
+type Mutation {
+    newAccount(name: String!, type: String,locationId: String): Account
+}
