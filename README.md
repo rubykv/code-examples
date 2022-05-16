@@ -62,3 +62,7 @@ Few of the projects implement multiple concepts so they would be listed under mu
 ### Reactive Programming RxJava
 * Project :: reactive
 * Guide :: https://medium.com/javarevisited/lets-explore-reactive-programming-through-rxjava-805b0137e5d
+
+### GraphQL
+* Project :: graphql
+* Guide :: <to update>
