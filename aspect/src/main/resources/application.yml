@@ -1,0 +1,6 @@
+spring:
+ application:
+   name: aspect-demo
+   
+server:
+ port: 8090

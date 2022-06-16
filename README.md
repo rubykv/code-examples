@@ -65,4 +65,8 @@ Few of the projects implement multiple concepts so they would be listed under mu
 
 ### GraphQL
 * Project :: graphql
-* Guide :: <to update>
+* Guide :: https://medium.com/javarevisited/what-is-graphql-will-it-replace-rest-api-da2618001655
+
+### AOP + Spring Cloud Sleuth
+* Project :: aspect
+* Guide :: 
