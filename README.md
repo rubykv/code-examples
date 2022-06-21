@@ -69,4 +69,4 @@ Few of the projects implement multiple concepts so they would be listed under mu
 
 ### AOP + Spring Cloud Sleuth
 * Project :: aspect
-* Guide :: 
+* Guide :: https://medium.com/javarevisited/how-to-build-an-effective-logging-system-using-aspect-and-spring-cloud-sleuth-8f7aed647545
