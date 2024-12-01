@@ -15,7 +15,11 @@ public class AiController {
 
     @GetMapping("/ai/message")
     public String getMessage(@RequestParam(value = "prompt") String prompt) {
+        int a = 10;
+        int b = 10;
+        int x = a /b;
         return chatClient.generate(prompt);
+
     }
 
 }
