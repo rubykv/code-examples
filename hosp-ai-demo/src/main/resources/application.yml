@@ -1,0 +1,10 @@
+mylib:
+  db:
+    url: jdbc:mysql://production-server:3306/productiondb
+    username: prod_user
+  logging:
+    level: DEBUG
+  features:
+    advanced-caching: true
+    #update propertoes
+    #remove properties file

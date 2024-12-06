@@ -38,9 +38,8 @@
 		<dependency>
 			<groupId>com.github.r7b7</groupId>
 			<artifactId>hosp-ai</artifactId>
-			<version>v1.0.0-alpha.1</version>
+			<version>v1.0.0-alpha.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
